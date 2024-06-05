@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Test Site - whatsmyip</title>
+  <script>
+    function getIP(json) {
+      document.getElementById('ip-address').innerHTML = json.ip;
+    }
+  </script>
+</head>
+<body>
+  <h1>My Ip-Address</h1>
+  <p>The IP address you are using to access this page is: <span id="ip-address"></span></p>
+  <script src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
+</body>
+</html>
